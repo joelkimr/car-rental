@@ -4,8 +4,8 @@ import React from 'react';
 const PageMetaData = (): JSX.Element => {
   return (
     <Head>
-      <title>Next JS Template By Ntavigwa Bashombe</title>
-      <meta name='description' content='Next JS - Template' />
+      <title>Car Rental</title>
+      <meta name='Description' content='Car Rental WebSite' />
     </Head>
   );
 };
