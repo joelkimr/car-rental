@@ -5,22 +5,22 @@ import PageMetaData from '../components/PageMetaData';
 import '../styles/animation.css';
 import '../styles/globals.css';
 
-/**
- * @author Ntavigwa Bashombe
- * @since 0.001
- *
- * @summary This is the main app that imports our styles
- * @returns {JSX.Element}: JSX Code for App
- * @license MIT
- * @version 1.0.0
- */
+// import { Montserrat } from 'next/font/google';
+
+// const montserrat = Montserrat({
+//   subsets: ['latin'],
+//   variable: '--font-mont',
+// });
+
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <>
+      {/* <main className={ `${montserrat.variable} font-mont` }> */}
       <PageMetaData />
       <Scaffold>
         <Component {...pageProps} />
       </Scaffold>
+      {/* </main> */}
     </>
   );
 };
