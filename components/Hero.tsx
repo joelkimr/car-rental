@@ -17,7 +17,7 @@ const Hero = () => {
             <div className='w-full h-screen flex justify-center items-center absolute -mt-14'>
               <div className='space-y-9'>
                 <div className='space-y-4'>
-                  <p className='text-xl font-extrabold'>Plan your trip now</p>
+                  <p className='text-2xl font-extrabold'>Plan your trip now</p>
                   <p className='text-6xl font-bold'>
                     Save <span className='text-orange-600'>big </span>with our{' '}
                     <br /> car rental
@@ -29,10 +29,11 @@ const Hero = () => {
                 </div>
                 <div className='banner-btn'>
                   <a href='#'>
-                    <span></span>Book Ride
+                    <span></span>
+                    <b>Book Ride</b>
                   </a>
                   <a href='#'>
-                    <p></p>Learn More
+                    <span></span> <b> Learn More</b>
                   </a>
                 </div>
               </div>
