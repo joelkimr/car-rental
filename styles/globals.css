@@ -44,7 +44,7 @@
 
 /* Chrome, Edge and Safari */
 
-*::-webkit-scrollbar {
+/* *::-webkit-scrollbar {
   width: 12px;
   width: 12px;
 }
@@ -66,4 +66,4 @@
 
 *::-webkit-scrollbar-thumb:active {
   background-color: #a0a0a0;
-}
+} */
