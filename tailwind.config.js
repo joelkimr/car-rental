@@ -8,6 +8,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        primary: '#FF4500',
+      },
       fontFamily: {
         mont: ['var(--font-mont)', ...fontFamily.sans],
       },
