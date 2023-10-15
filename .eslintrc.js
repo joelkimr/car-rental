@@ -19,7 +19,9 @@ module.exports = {
     },
   ],
   plugins: ['react', '@typescript-eslint'],
-  rules: {},
+  rules: {
+    '@typescript-eslint/no-explicit-any': 'off',
+  },
   settings: {
     react: {
       version: 'latest',
