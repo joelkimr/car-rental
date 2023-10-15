@@ -30,7 +30,7 @@ const Planning = () => {
             </div>
             <div className='flex flex-col justify-center items-center'>
               <Image src={Plan3} />
-              <p className=' text-2xl font-extrabold mt-2'>Let's Drive</p>
+              <p className=' text-2xl font-extrabold mt-2'>Let us Drive</p>
               <p className='text-black/60 text-[16px] mt-3'>
                 Wheter you are hitting the open road. We have got you covered
                 with our wide range of cars{' '}
