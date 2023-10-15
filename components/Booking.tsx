@@ -28,7 +28,6 @@ const Booking = () => {
                 <option value='bmw'>BMW 320 ModernLive</option>
                 <option value='benz'>Mercedes-Benz GLE</option>
                 <option value='passo'>VW Passo CC</option>
-                <option value='wish'>Wish 7 seats</option>
               </select>
               <div className='flex flex-row'>
                 <BiCalendar className='mt-1 text-lg mr-2 text-primary' />
