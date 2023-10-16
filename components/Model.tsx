@@ -7,7 +7,7 @@ const Model = () => {
       Type: 'Audi A4 S-Line',
       details: [
         {
-          price: '$55',
+          price: '$55 / rent per day',
         },
         {
           carmode: 'Model',
@@ -43,7 +43,7 @@ const Model = () => {
       Type: 'VW Golf 6',
       details: [
         {
-          price: '$48',
+          price: '$48 / rent per day',
         },
         {
           carmode: 'Model',
@@ -67,7 +67,7 @@ const Model = () => {
         },
         {
           carmode: 'Transmission',
-          car: 'Automatic',
+          car: 'Manuel',
         },
         {
           carmode: 'Fuel',
@@ -79,7 +79,7 @@ const Model = () => {
       Type: 'Toyota Hilux',
       details: [
         {
-          price: '$55',
+          price: '$60 / rent per day',
         },
         {
           carmode: 'Model',
@@ -115,7 +115,7 @@ const Model = () => {
       Type: 'BMW 320 ModernLine',
       details: [
         {
-          price: '$55',
+          price: '$80 / rent per day',
         },
         {
           carmode: 'Model',
@@ -151,7 +151,7 @@ const Model = () => {
       Type: 'Mercedes-Benz GLE',
       details: [
         {
-          price: '$55',
+          price: '$97 / rent per day',
         },
         {
           carmode: 'Model',
@@ -187,7 +187,7 @@ const Model = () => {
       Type: 'VW Passo',
       details: [
         {
-          price: '$55',
+          price: '$30 / rent per day',
         },
         {
           carmode: 'Model',
@@ -207,7 +207,7 @@ const Model = () => {
         },
         {
           carmode: 'AC',
-          car: 'Yes',
+          car: '??',
         },
         {
           carmode: 'Transmission',
@@ -223,16 +223,16 @@ const Model = () => {
 
   return (
     <>
-      <section>
+      <section className='m-32'>
         <div className='flex flex-col justify-center items-center gap-y-3 m-16'>
           <p className='text-2xl font-bold'>Vehicle Models</p>
           <p className='text-4xl font-extrabold'>Our rental fleet</p>
-          <p className='text-black/60 text-[16px] '>
+          <p className='text-black/90 text-[19px] '>
             Choose from a variety of our amazing vehicles to rent for your next
-            adventure or business trip
+            adventure or business trip below
           </p>
         </div>
-        <div className='flex flex-row'>
+        <div className='flex flex-row justify-evenly'>
           <div className='flex flex-col'>
             {cars.map((models, key) => {
               return (
@@ -241,7 +241,7 @@ const Model = () => {
                   onClick={() => {
                     setSelected(key);
                   }}
-                  className={`w-44 h-10 inline-flex items-center justify-center text-center text-[16px] border border-solid border-[#dee2e6] font-medium rounded-md ease-in duration-200 hover:bg-primary hover:text-white ${
+                  className={`w-64 h-12 inline-flex items-center justify-center text-center text-[19px] border-b  border-[#b8b8b8] font-bold rounded-md ease-in duration-200 hover:bg-primary hover:text-white mb-2 ${
                     selected === key
                       ? 'bg-primary text-white'
                       : 'bg-none text-black'
@@ -252,8 +252,15 @@ const Model = () => {
               );
             })}
           </div>
+          <div></div>
           <div>
+            <div></div>
             <RowOne data={cars[selected]} />
+            <div>
+              <button className='w-60 h-12 bg-primary text-white hover:bg-primary/80 transform ease-out duration-300 font-bold text-[19px] mt-3'>
+                RESERVE NOW
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -264,24 +271,32 @@ const Model = () => {
 export default Model;
 
 const RowOne = ({ data }: { data: any }) => {
-  console.log(data);
   return (
     <>
-      <div className=''>
+      <div>
         {data.details.map((detail: any, key: number) => {
           return (
             <div key={key}>
-              <div>
-                <p>{detail.price}</p>
-              </div>
-              <div className='flex flex-row'>
-                <div>
-                  <p>{detail.carmode}</p>
-                </div>
-                <div>
-                  <p>{detail.car}</p>
-                </div>
-              </div>
+              <table>
+                <thead>
+                  <tr>
+                    <td className='text-center text-[23px] text-white font-bold  bg-primary'>
+                      <span>{detail.price}</span>
+                    </td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <div className='w-60 h-7 text-[16px] flex flex-row border-b border-l border-r border-[#b8b8b8]'>
+                    <div className='w-28 flex justify-center '>
+                      <td>{detail.carmode}</td>
+                    </div>
+                    <span className='font-extrabold text-[#b8b8b8]'>-</span>
+                    <div className='w-32 flex justify-center'>
+                      <td>{detail.car}</td>
+                    </div>
+                  </div>
+                </tbody>
+              </table>
             </div>
           );
         })}
