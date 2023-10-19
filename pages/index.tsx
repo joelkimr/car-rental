@@ -6,6 +6,9 @@ import Planning from '../components/Planning';
 import Model from '../components/Model';
 import Banner from '../components/Banner';
 import ChooseUs from '../components/ChooseUs';
+import Testimonials from '../components/Testimonials';
+import Download from '../components/Download';
+import Footer from '../components/Footer';
 
 const Home: NextPage = (): JSX.Element => {
   return (
@@ -16,6 +19,9 @@ const Home: NextPage = (): JSX.Element => {
       <Model />
       <Banner />
       <ChooseUs />
+      <Testimonials />
+      <Download />
+      <Footer />
     </>
   );
 };

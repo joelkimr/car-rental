@@ -1,0 +1,63 @@
+import React from 'react';
+import Image from 'next/image';
+import user1 from '../images/testimonials/pfp1.jpg';
+import user2 from '../images/testimonials/pfp2.jpg';
+import { FaQuoteRight } from 'react-icons/fa';
+
+const Testimonials = () => {
+    return (
+        <>
+            <section>
+                <div className='space-y-28 mb-32'>
+                    <div className='flex flex-col justify-center items-center space-y-3 mt-32'>
+                        <p className='text-2xl font-bold'>Reviewed by People</p>
+                        <p className='text-4xl font-extrabold'>Client's Testimonials</p>
+                        <p className='w-1/2 text-black/70 text-center'> Discover the positive impact we've made on the our clients by
+                            reading through their testimonials. Our clients have experienced
+                            our service and results, and they're eager to share their
+                            positive experiences with you.
+                        </p>
+                    </div>
+                    <div className='flex flex-row justify-center gap-x-32'>
+                        <div className='w-1/4'><p className='text-black font-bold text-xl'>
+                            "We rented a car from this website and had an amazing
+                            experience! The booking was easy and the rental rates were
+                            very affordable. "
+                        </p>
+                            <div className='flex flex-row justify-between items-center m-6'>
+                                <div className='flex flex-row items-center gap-x-4'>
+                                    <div><Image src={ user1 } width={ 70 } height={ 70 } className='rounded-full' /></div>
+                                    <div><p className='font-extrabold'>Johnny Beach</p>
+                                        <p className='font-semibold'>Belgium</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <FaQuoteRight className='text-4xl text-primary' />
+                                </div>
+                            </div>
+                        </div>
+                        <div className='w-1/4'><p className='text-black font-bold text-xl'>
+                            "The car was in great condition and made our trip even better.
+                            Highly recommend for this car rental website!"king was easy and the rental rates were
+                            very affordable. "
+                        </p>
+                            <div className='flex flex-row justify-between items-center m-6'>
+                                <div className='flex flex-row items-center gap-x-4'>
+                                    <div><Image src={ user2 } width={ 70 } height={ 70 } className='rounded-full' /></div>
+                                    <div><p className='font-extrabold'>Jean Pierre</p>
+                                        <p className='font-semibold'>Brussels</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <FaQuoteRight className='text-4xl text-primary' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </>
+    )
+}
+
+export default Testimonials
