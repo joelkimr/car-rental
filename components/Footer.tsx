@@ -19,7 +19,7 @@ const Footer = () => {
                         <p>Blog</p>
                         <p>Blog</p>
                         <p>How we work</p>
-                    </div>
+                    </div>      
                     <div className='space-y-1'>
                         <h2 className='text-xl font-extrabold'>WORKING HOURS</h2>
                         <p>Mon - Fri: 9:00AM - 9:00PM</p>

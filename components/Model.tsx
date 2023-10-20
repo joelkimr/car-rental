@@ -5,10 +5,9 @@ const Model = () => {
   const cars = [
     {
       Type: 'Audi A4 S-Line',
+      price: '$55',
+      photo: 'https://ik.imagekit.io/joel/audia1.jpg?updatedAt=1697711751386',
       details: [
-        {
-          price: '$55 / rent per day',
-        },
         {
           carmode: 'Model',
           car: 'Audi',
@@ -41,10 +40,9 @@ const Model = () => {
     },
     {
       Type: 'VW Golf 6',
+      price: '$48',
+      photo: 'https://ik.imagekit.io/joel/golf6.jpg?updatedAt=1697711751455',
       details: [
-        {
-          price: '$48 / rent per day',
-        },
         {
           carmode: 'Model',
           car: 'Golf',
@@ -77,10 +75,9 @@ const Model = () => {
     },
     {
       Type: 'Toyota Hilux',
+      price: '$60',
+      photo: 'https://ik.imagekit.io/joel/hilux.jpg?updatedAt=1697712037718',
       details: [
-        {
-          price: '$60 / rent per day',
-        },
         {
           carmode: 'Model',
           car: 'Hilux',
@@ -113,10 +110,9 @@ const Model = () => {
     },
     {
       Type: 'BMW 320 ModernLine',
+      price: '$80',
+      photo: 'https://ik.imagekit.io/joel/bmw320.jpg?updatedAt=1697711609015',
       details: [
-        {
-          price: '$80 / rent per day',
-        },
         {
           carmode: 'Model',
           car: '320',
@@ -149,10 +145,9 @@ const Model = () => {
     },
     {
       Type: 'Mercedes-Benz GLE',
+      price: '$97',
+      photo: 'https://ik.imagekit.io/joel/benz.jpg?updatedAt=1697711751259',
       details: [
-        {
-          price: '$97 / rent per day',
-        },
         {
           carmode: 'Model',
           car: 'Benz GLE',
@@ -185,10 +180,9 @@ const Model = () => {
     },
     {
       Type: 'VW Passo',
+      price: '$30',
+      photo: 'https://ik.imagekit.io/joel/toyotacamry.jpg?updatedAt=1697711886811',
       details: [
-        {
-          price: '$30 / rent per day',
-        },
         {
           carmode: 'Model',
           car: 'Passo',
@@ -224,16 +218,16 @@ const Model = () => {
   return (
     <>
       <section className='m-32'>
-        <div className='flex flex-col justify-center items-center gap-y-3 m-16'>
+        <div className='flex flex-col justify-center items-center gap-y-3 m-28'>
           <p className='text-2xl font-bold'>Vehicle Models</p>
           <p className='text-4xl font-extrabold'>Our rental fleet</p>
-          <p className='text-black/90 text-[19px] '>
+          <p className='text-black/70 text-[18px] '>
             Choose from a variety of our amazing vehicles to rent for your next
             adventure or business trip below
           </p>
         </div>
-        <div className='flex flex-row justify-evenly'>
-          <div className='flex flex-col'>
+        <div className='flex flex-row justify-evenly pb-9'>
+          <div className='w-1/4 flex flex-col'>
             {cars.map((models, key) => {
               return (
                 <button
@@ -252,9 +246,10 @@ const Model = () => {
               );
             })}
           </div>
-          <div></div>
-          <div>
-            <div></div>
+          <div className='w-1/3'>
+            <img src={ cars[selected]?.photo } alt="" className="" />
+          </div>
+          <div className='w-1/4 ml-12'>
             <RowOne data={cars[selected]} />
             <div>
               <button className='w-60 h-12 bg-primary text-white hover:bg-primary/80 transform ease-out duration-300 font-bold text-[19px] mt-3'>
@@ -272,35 +267,23 @@ export default Model;
 
 const RowOne = ({ data }: { data: any }) => {
   return (
-    <>
-      <div>
-        {data.details.map((detail: any, key: number) => {
-          return (
-            <div key={key}>
-              <table>
-                <thead>
-                  <tr>
-                    <td className='text-center text-[23px] text-white font-bold  bg-primary'>
-                      <span>{detail.price}</span>
-                    </td>
-                  </tr>
-                </thead>
-                <tbody>
-                  <div className='w-60 h-7 text-[16px] flex flex-row border-b border-l border-r border-[#b8b8b8]'>
-                    <div className='w-28 flex justify-center '>
-                      <td>{detail.carmode}</td>
-                    </div>
-                    <span className='font-extrabold text-[#b8b8b8]'>-</span>
-                    <div className='w-32 flex justify-center'>
-                      <td>{detail.car}</td>
-                    </div>
-                  </div>
-                </tbody>
-              </table>
-            </div>
-          );
-        })}
-      </div>
-    </>
+    <table>
+      <thead>
+        <tr className='bg-primary text-white'>
+          <td className='text-center p-2'>
+            <p className='text-[26px] font-extrabold'>{ data?.price }<span className='text-[18px] font-bold'> / price per day</span></p>
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        { data.details.map((detail: any, key: number) => (
+          <tr key={ key } className='w-60 h-9 flex justify-between border-b border-r border-l text-center'>
+            <td className='grid grid-cols-3 w-full py-1'>
+              <p>{ detail?.carmode }</p><p> - </p><p>{ detail?.car }</p>
+            </td>
+          </tr>
+        )) }
+      </tbody>
+    </table>
   );
 };
