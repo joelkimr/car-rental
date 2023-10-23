@@ -74,25 +74,25 @@ const Model = () => {
       ],
     },
     {
-      Type: 'Toyota Hilux',
-      price: '$60',
-      photo: 'https://ik.imagekit.io/joel/hilux.jpg?updatedAt=1697712037718',
+      Type: 'Mercedes-Benz GLE',
+      price: '$97',
+      photo: 'https://ik.imagekit.io/joel/benz.jpg?updatedAt=1697711751259',
       details: [
         {
           carmode: 'Model',
-          car: 'Hilux',
+          car: 'Benz GLE',
         },
         {
           carmode: 'Mark',
-          car: 'Toyota',
+          car: 'Mercedes',
         },
         {
           carmode: 'Year',
-          car: '2006',
+          car: '2009',
         },
         {
           carmode: 'Doors',
-          car: '4',
+          car: '4/5',
         },
         {
           carmode: 'AC',
@@ -104,7 +104,7 @@ const Model = () => {
         },
         {
           carmode: 'Fuel',
-          car: 'Diesel',
+          car: 'Gasoline',
         },
       ],
     },
@@ -144,25 +144,25 @@ const Model = () => {
       ],
     },
     {
-      Type: 'Mercedes-Benz GLE',
-      price: '$97',
-      photo: 'https://ik.imagekit.io/joel/benz.jpg?updatedAt=1697711751259',
+      Type: 'Toyota Hilux',
+      price: '$60',
+      photo: 'https://ik.imagekit.io/joel/hilux.jpg?updatedAt=1697712037718',
       details: [
         {
           carmode: 'Model',
-          car: 'Benz GLE',
+          car: 'Hilux',
         },
         {
           carmode: 'Mark',
-          car: 'Mercedes',
+          car: 'Toyota',
         },
         {
           carmode: 'Year',
-          car: '2009',
+          car: '2006',
         },
         {
           carmode: 'Doors',
-          car: '4/5',
+          car: '4',
         },
         {
           carmode: 'AC',
@@ -174,7 +174,7 @@ const Model = () => {
         },
         {
           carmode: 'Fuel',
-          car: 'Gasoline',
+          car: 'Diesel',
         },
       ],
     },

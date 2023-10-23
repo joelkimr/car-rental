@@ -24,7 +24,7 @@ const Planning = () => {
               </p>
             </div>
             <div className='flex flex-col justify-center items-center'>
-            {/* <img src='https://ik.imagekit.io/joel/icon3.png?updatedAt=1697709103320' /> */ }
+            <img src='https://ik.imagekit.io/joel/icon3.png?updatedAt=1697709103320' />
               <p className=' text-2xl font-extrabold mt-2'>Let us Drive</p>
               <p className='text-black/60 text-[18px] mt-3'>
               Wheither you are hitting the open road. We have got you covered
