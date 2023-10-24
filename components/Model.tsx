@@ -235,7 +235,7 @@ const Model = () => {
                   onClick={() => {
                     setSelected(key);
                   }}
-                  className={`w-64 h-12 inline-flex items-center justify-center text-center text-[19px] border-b  border-[#b8b8b8] font-bold rounded-md ease-in duration-200 hover:bg-primary hover:text-white mb-2 ${
+                  className={ `xl:w-64 xl:h-12 w-52 h-10 inline-flex items-center justify-center text-center text-[19px] border-b  border-[#b8b8b8] font-bold rounded-md ease-in duration-200 hover:bg-primary hover:text-white mb-2 ${
                     selected === key
                       ? 'bg-primary text-white'
                       : 'bg-none text-black'

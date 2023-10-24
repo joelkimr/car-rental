@@ -5,9 +5,8 @@ import Logo from '../../images/logo/logo.png';
 
 const NavBar = () => {
   return (
-    <>
-      <nav>
-        <div className='flex justify-center items-center m-6 space-x-24'>
+
+    <div className='w-full  mt-6 flex justify-center items-center space-x-6 xl:space-x-24'>
           <div>
             <Link href='#'>
               <Image
@@ -36,10 +35,7 @@ const NavBar = () => {
                 {' '}
                 Testimanials
               </li>
-              <li className=' hover:text-orange-700 transition duration-400 cursor-pointer'>
-                Our Team
-              </li>
-              <li className=' hover:text-orange-700 transition duration-400 cursor-pointer'>
+          <li className=' hover:text-orange-700 transition duration-400 cursor-pointer'>
                 Contact
               </li>
             </ul>
@@ -55,8 +51,7 @@ const NavBar = () => {
             </div>
           </div>
         </div>
-      </nav>
-    </>
+
   );
 };
 
