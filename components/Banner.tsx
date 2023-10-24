@@ -10,7 +10,7 @@ const Banner = () => {
               Save big with our cheap car rental!
             </h2>
             <p className='font-bold text-xl'>
-              Top Airports. Local Suppliers.{' '}
+              Top Airports. Local Suppliers.
               <span className='text-primary'>24/7</span> Support.
             </p>
           </div>

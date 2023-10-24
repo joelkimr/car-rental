@@ -21,7 +21,7 @@ const Hero = () => {
               <div className='space-y-4'>
                 <p className='text-2xl font-extrabold'>Plan your trip now</p>
                 <p className='text-5xl font-extrabold'>
-                  Save <span className='text-orange-600'>big </span>with our{' '}
+                  Save <span className='text-orange-600'>big </span>with our
                   <br /> car rental
                 </p>
                 <p className='text-sm text-black/50 font-semibold'>
@@ -56,8 +56,8 @@ const Hero = () => {
                 </a>
               </div>
             </div>
-            <div>
-              <Image src={MainCar} width={650} height={380} />
+            <div className='xl:w-[39rem] xl:h-[33rem] w-[31rem] h-[25rem]' >
+              <Image src={ MainCar } />
             </div>
           </div>
         </div>
