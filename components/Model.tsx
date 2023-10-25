@@ -235,7 +235,7 @@ const Model = () => {
                   onClick={() => {
                     setSelected(key);
                   }}
-                  className={ `xl:w-64 xl:h-12 w-52 h-10 inline-flex items-center justify-center text-center text-[19px] border-b  border-[#b8b8b8] font-bold rounded-md ease-in duration-200 hover:bg-primary hover:text-white mb-2 ${
+                  className={ `xl:w-64 xl:h-12 w-44  h-10 inline-flex items-center justify-center text-center xl:text-[19px] text-[16px] border-b  border-[#b8b8b8] font-bold rounded-md ease-in duration-200 hover:bg-primary hover:text-white mb-2 ${
                     selected === key
                       ? 'bg-primary text-white'
                       : 'bg-none text-black'
@@ -246,7 +246,7 @@ const Model = () => {
               );
             })}
           </div>
-          <div className='w-1/3'>
+          <div className='xl:w-1/3 w-1/2'>
             <img src={ cars[selected]?.photo } alt="" className="" />
           </div>
           <div className='w-1/4 ml-12'>

@@ -8,7 +8,7 @@ const Download = () => {
     return (
         <>
             <section className='pt-20'>
-                <div className='w-1/3 space-y-5 absolute left-80 mt-32'>
+                <div className='w-1/3 space-y-5 absolute xl:left-80 left-44 xl:mt-32'>
                     <p className='text-4xl font-extrabold'>Download our app to get most out of it</p>
                     <p className='text-black/70'> Thrown shy denote ten ladies though ask saw. Or by to he going
                         think order event music. Incommode so intention defective at
