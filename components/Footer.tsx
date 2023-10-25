@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <>
             <section>
-                <div className='flex flex-row justify-center gap-x-44 m-9 font-semibold'>
+                <div className='w-full flex flex-row justify-center gap-x-44 m-16 font-semibold'>
                     <div className='w-1/6'>
                         <h2 className='text-xl'><span className='font-extrabold'>CAR</span> Rental</h2>
                         <p className='text-black/60 mt-4 mb-4'>We offers a big range of vehicles for all your driving needs. We have the perfect car to meet your needs.</p>
