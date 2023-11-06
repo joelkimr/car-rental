@@ -13,18 +13,18 @@ const Hero = () => {
         <NavBar />
 
         <div className='relative'>
-          <div className='w-full text-end absolute'>
+          <div className='w-full text-end absolute lg:block hidden'>
             <Image src={Background} width={600} height={550} />
           </div>
-          <div className='w-full h-screen flex justify-center items-center'>
+          <div className='md:min-w-full min-w-[140%] h-screen flex justify-center items-center mt-24 md:mt-0 mb-20 md:mb-0'>
             <div className='space-y-9'>
               <div className='space-y-4'>
-                <p className='text-2xl font-extrabold'>Plan your trip now</p>
-                <p className='text-5xl font-extrabold'>
+                <p className='md:text-2xl text-4xl font-extrabold'>Plan your trip now</p>
+                <p className='md:text-5xl text-6xl font-extrabold'>
                   Save <span className='text-orange-600'>big </span>with our
                   <br /> car rental
                 </p>
-                <p className='text-sm text-black/50 font-semibold'>
+                <p className='md:text-sm text-lg text-black/50 font-semibold'>
                   Rent the car of your dreams. Unbeatable prices. Unlimited
                   miles. <br /> Flexible pick-up options and much more
                 </p>
@@ -56,7 +56,7 @@ const Hero = () => {
                 </a>
               </div>
             </div>
-            <div className='xl:w-[39rem] xl:h-[33rem] w-[31rem] h-[25rem]' >
+            <div className='xl:w-[39rem] xl:h-[33rem] w-[31rem] h-[25rem] lg:block hidden' >
               <Image src={ MainCar } />
             </div>
           </div>

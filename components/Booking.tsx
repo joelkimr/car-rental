@@ -8,20 +8,20 @@ const Booking = () => {
   return (
     <>
       <section>
-        <div className='w-full h-96'>
-          <div className='flex flex-row justify-evenly'>
-            <div className='space-y-3'>
+        <div className='md:min-w-full min-w-[140%] h-96 md:pl-0 pl-16'>
+          <div className='flex md:flex-row flex-col justify-evenly'>
+            <div className='md:space-y-3 space-y-2'>
               <div>
-                <p className='font-extrabold text-2xl mb-6'>Book a Car</p>
+                <p className='font-extrabold md:text-2xl text-4xl mb-6'>Book a Car</p>
               </div>
-              <div className='flex flex-row justify-center items-center'>
-                <AiFillCar className='text-lg text-primary mr-2' />
-                <label htmlFor='vehicles' className='font-bold'>
+              <div className='flex flex-row items-center'>
+                <AiFillCar className='md:text-lg text-2xl text-primary mr-2' />
+                <label htmlFor='vehicles' className='font-bold md:text-base text-2xl'>
                   Select Your Car Type
                 </label>
                 <CgAsterisk className='text-primary' />
               </div>
-              <select className='w-auto h-9 border border-primary focus:outline-none bg-transparent text-gray-600 cursor-pointer'>
+              <select className='md:w-auto w-80 h-9 border border-primary focus:outline-none bg-transparent text-gray-600 cursor-pointer text-xl'>
                 <option value='audi'>Audi A4 S-Live</option>
                 <option value='gold'>VW Golf 6</option>
                 <option value='hilux'>Toyota Hilux</option>
@@ -30,21 +30,21 @@ const Booking = () => {
                 <option value='passo'>VW Passo CC</option>
               </select>
               <div className='flex flex-row'>
-                <BiCalendar className='mt-1 text-lg mr-2 text-primary' />
-                <p className='font-bold'>Pick-up</p>
+                <BiCalendar className='mt-1 md:text-lg text-2xl mr-2 text-primary' />
+                <p className='font-bold  md:text-base text-2xl'>Pick-up</p>
                 <CgAsterisk className='text-primary' />
               </div>
-              <p className='text-[13px] text-gray-400'>mm / dd / yyyy</p>
+              <p className='md:text-[13px] text-lg text-gray-400'>mm / dd / yyyy</p>
             </div>
-            <div className='space-y-3 mt-14'>
+            <div className='space-y-3 md:mt-14 mt-3'>
               <div className='flex felx-row items-center'>
                 <MdOutlineLocationOn className='text-lg text-primary mr-1' />
-                <label htmlFor='vehicles' className='font-bold'>
+                <label htmlFor='vehicles' className='font-bold  md:text-base text-2xl'>
                   Pick-up
                 </label>
                 <CgAsterisk className='text-primary' />
               </div>
-              <select className='w-auto h-9 border border-primary focus:outline-none bg-transparent text-gray-600 cursor-pointer'>
+              <select className='md:w-auto w-80 h-9 border border-primary focus:outline-none bg-transparent text-gray-600 cursor-pointer text-xl'>
                 <option value='location'>Your current location</option>
                 <option value='town'>Downtown</option>
                 <option value='street'>Elizabeth Street</option>
@@ -53,27 +53,27 @@ const Booking = () => {
               </select>
               <div className='flex flex-row'>
                 <BiCalendar className='mt-1 text-lg mr-2 text-primary' />
-                <p className='font-bold'>Drop-of</p>
+                <p className='font-bold  md:text-base text-2xl'>Drop-of</p>
                 <CgAsterisk className='text-primary' />
               </div>
-              <p className='text-[13px] text-gray-400'>mm / dd / yyyy</p>
+              <p className='md:text-[13px] text-lg text-gray-400'>mm / dd / yyyy</p>
             </div>
-            <div className='space-y-3 mt-14'>
+            <div className='space-y-3 md:mt-14  mt-3'>
               <div className='flex felx-row items-center'>
                 <MdOutlineLocationOn className='text-lg text-primary mr-1' />
-                <label htmlFor='vehicles' className='font-bold'>
+                <label htmlFor='vehicles' className='font-bold  md:text-base text-2xl'>
                   Drop-of
                 </label>
                 <CgAsterisk className='text-primary' />
               </div>
-              <select className='w-auto h-9 border border-primary focus:outline-none bg-transparent text-gray-600 cursor-pointer'>
+              <select className='md:w-auto w-80 h-9 border border-primary focus:outline-none bg-transparent text-gray-600 cursor-pointer text-xl'>
                 <option value='town'>Downtown</option>
                 <option value='street'>Elizabeth Street</option>
                 <option value='restaurent'>KFC around</option>
                 <option value='resto'>CAFE JAVA</option>
               </select>
               <br />
-              <button className='w-72 h-12 border-2 bg-primary text-white font-bold rounded-md hover:bg-primary/70 transition ease-out duration-300'>
+              <button className='md:w-72 w-80 h-12 border-2 bg-primary text-white font-bold rounded-md hover:bg-primary/70 transition ease-out duration-300'>
                 Search
               </button>
             </div>

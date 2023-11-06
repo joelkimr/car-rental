@@ -8,9 +8,9 @@ const Download = () => {
     return (
         <>
             <section className='pt-20'>
-                <div className='w-1/3 space-y-5 absolute xl:left-80 left-44 xl:mt-32'>
-                    <p className='text-4xl font-extrabold'>Download our app to get most out of it</p>
-                    <p className='text-black/70'> Thrown shy denote ten ladies though ask saw. Or by to he going
+                <div className='md:w-1/3 w-full space-y-5 absolute xl:left-80 left-28 xl:mt-32'>
+                    <p className='md:text-4xl text-5xl font-extrabold'>Download our app to get most out of it</p>
+                    <p className='text-black/70 lg:block hidden'> Thrown shy denote ten ladies though ask saw. Or by to he going
                         think order event music. Incommode so intention defective at
                         convinced. Led income months itself and houses you.
                     </p>
@@ -23,7 +23,7 @@ const Download = () => {
                         </div>
                     </div>
                 </div>
-                <div className='relative'>
+                <div className='relative md:block hidden'>
                     <Image src={ bg02 } />
                 </div>
             </section>
