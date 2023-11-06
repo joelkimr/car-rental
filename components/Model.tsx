@@ -217,16 +217,16 @@ const Model = () => {
 
   return (
     <>
-      <section className='m-32'>
-        <div className='flex flex-col justify-center items-center gap-y-3 m-28'>
-          <p className='text-2xl font-bold'>Vehicle Models</p>
-          <p className='text-4xl font-extrabold'>Our rental fleet</p>
-          <p className='text-black/70 text-[18px] '>
+      <section className='mt-36 lg:mt-0'>
+        <div className='md:min-w-fit min-w-[140%] flex flex-col justify-center items-center gap-y-3 m-9'>
+          <p className='md:text-2xl text-3xl font-bold'>Vehicle Models</p>
+          <p className='md:text-4xl text-5xl font-extrabold'>Our rental fleet</p>
+          <p className='text-black/70 text-center md:text-[16px] text-[22px]'>
             Choose from a variety of our amazing vehicles to rent for your next
             adventure or business trip below
           </p>
         </div>
-        <div className='flex flex-row justify-evenly pb-9'>
+        <div className='flex flex-col lg:flex-row lg:justify-center items-center space-y-9 pb-9 m-9'>
           <div className='w-1/4 flex flex-col'>
             {cars.map((models, key) => {
               return (
@@ -235,7 +235,7 @@ const Model = () => {
                   onClick={() => {
                     setSelected(key);
                   }}
-                  className={ `xl:w-64 xl:h-12 w-44  h-10 inline-flex items-center justify-center text-center xl:text-[19px] text-[16px] border-b  border-[#b8b8b8] font-bold rounded-md ease-in duration-200 hover:bg-primary hover:text-white mb-2 ${
+                  className={ `xl:w-64 xl:h-12 md:w-44 w-80 md:h-10 h-16 inline-flex items-center justify-center text-center xl:text-[19px] md:text-[16px] text-[25px] border-b  border-[#b8b8b8] font-bold rounded-md ease-in duration-200 hover:bg-primary hover:text-white mb-2 ${
                     selected === key
                       ? 'bg-primary text-white'
                       : 'bg-none text-black'
@@ -246,13 +246,13 @@ const Model = () => {
               );
             })}
           </div>
-          <div className='xl:w-1/3 w-1/2'>
+          <div className='xl:w-1/3 md:w-1/2 w-full md:ml-0 ml-56'>
             <img src={ cars[selected]?.photo } alt="" className="" />
           </div>
-          <div className='w-1/4 ml-12'>
+          <div className='w-1/4 lg:ml-12'>
             <RowOne data={cars[selected]} />
             <div>
-              <button className='w-60 h-12 bg-primary text-white hover:bg-primary/80 transform ease-out duration-300 font-bold text-[19px] mt-3'>
+              <button className='md:w-60 w-80 h-12 bg-primary text-white hover:bg-primary/80 transform ease-out duration-300 font-bold text-[19px] mt-3'>
                 RESERVE NOW
               </button>
             </div>
@@ -271,13 +271,13 @@ const RowOne = ({ data }: { data: any }) => {
       <thead>
         <tr className='bg-primary text-white'>
           <td className='text-center p-2'>
-            <p className='text-[26px] font-extrabold'>{ data?.price }<span className='text-[18px] font-bold'> / price per day</span></p>
+            <p className='text-[26px] font-extrabold'>{ data?.price }<span className='md:text-[18px] text-[30px] font-bold'> / price per day</span></p>
           </td>
         </tr>
       </thead>
       <tbody>
         { data.details.map((detail: any, key: number) => (
-          <tr key={ key } className='w-60 h-9 flex justify-between border-b border-r border-l text-center'>
+          <tr key={ key } className='md:w-60 w-80 h-9 flex justify-between border-b border-r border-l text-center md:text-[16px] text-[20px]'>
             <td className='grid grid-cols-3 w-full py-1'>
               <p>{ detail?.carmode }</p><p> - </p><p>{ detail?.car }</p>
             </td>
