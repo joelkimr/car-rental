@@ -1,11 +1,11 @@
 import React from 'react';
 import { NextPage } from 'next';
-import Hero from '../components/Hero';
+import Hero from './content/Hero';
 import Booking from '../components/Booking';
 import Planning from '../components/Planning';
 import Model from '../components/Model';
 import Banner from '../components/Banner';
-import ChooseUs from '../components/ChooseUs';
+import ChooseUs from '../pages/ChooseUs/chooseus';
 import Testimonials from '../components/Testimonials';
 import Download from '../components/Download';
 import Footer from '../components/Footer';
