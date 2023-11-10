@@ -1,8 +1,8 @@
 import React from 'react';
-import NavBar from './NavBar/navBar';
+import NavBar from './navBar';
 import Image from 'next/image';
-import Background from '../images/hero/hero-bg.png';
-import MainCar from '../images/hero/main-car.png';
+import Background from '../../images/hero/hero-bg.png';
+import MainCar from '../../images/hero/main-car.png';
 import { RiArrowRightSLine } from 'react-icons/ri';
 import { MdVerified } from 'react-icons/md';
 
@@ -14,7 +14,7 @@ const Hero = () => {
 
         <div className='relative'>
           <div className='w-full text-end absolute lg:block hidden'>
-            <Image src={Background} width={600} height={550} />
+            <Image src={ Background } width={ 600 } height={ 550 } />
           </div>
           <div className='md:min-w-full min-w-[140%] h-screen flex justify-center items-center mt-24 md:mt-0 mb-20 md:mb-0'>
             <div className='space-y-9'>
@@ -34,7 +34,7 @@ const Hero = () => {
                   <div className='flex flex-row'>
                     <span></span>
                     <p>
-                      {' '}
+                      { ' ' }
                       <b> Book Ride</b>
                     </p>
                     <p className='mt-1 ml-4 text-xl'>
@@ -46,7 +46,7 @@ const Hero = () => {
                   <div className='flex flex-row'>
                     <span></span>
                     <p>
-                      {' '}
+                      { ' ' }
                       <b> Learn More</b>
                     </p>
                     <p className='mt-1 ml-4 text-xl'>
