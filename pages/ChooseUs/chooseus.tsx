@@ -20,11 +20,11 @@ const ChooseUs = () => {
               Best valued deals you will ever find
             </h2>
             <p className='text-black/60 md:text-base text-[23px]'>
-              Discover the best deals you'll ever find with our unbeatable
-              offers. We're dedicated to providing you with the best value for
+              Discover the best deals you{ `'` }ll ever find with our unbeatable
+              offers. We{ `'` }re dedicated to providing you with the best value for
               your money, so you can enjoy top-quality services and products
               without breaking the bank. Our deals are designed to give you the
-              ultimate renting experience, so don't miss out on your chance to
+              ultimate renting experience, so do not miss out on your chance to
               save big.
             </p>
             <div className='banner-btn'>
