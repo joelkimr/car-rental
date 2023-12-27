@@ -59,7 +59,7 @@ const NavBar = () => {
           </Link>
         </div>
         <div className='md:w-28 w-36 md:h-12 h-16 bg-orange-500 flex items-center justify-center text-white rounded-md'>
-          <Link to='#'>Register</Link>
+          <Link to=''>Register</Link>
         </div>
       </div>
     </div>
