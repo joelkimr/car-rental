@@ -13,10 +13,10 @@ const Hero = () => {
         <NavBar />
 
         <div className='relative'>
-          <div className='w-full text-end absolute lg:block hidden'>
+          <div className='w-full text-end absolute lg:block hidden 2xl:hidden'>
             <Image src={ Background } width={ 600 } height={ 550 } />
           </div>
-          <div className='md:min-w-full min-w-[140%] h-screen flex justify-center items-center mt-24 md:mt-0 mb-20 md:mb-0'>
+          <div className='md:min-w-full min-w-[140%] h-screen flex justify-center items-center mt-24 md:mt-0 mb-20 md:mb-0 ml-6 md:ml-0'>
             <div className='space-y-9'>
               <div className='space-y-4'>
                 <p className='md:text-2xl text-4xl font-extrabold'>Plan your trip now</p>
