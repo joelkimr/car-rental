@@ -4,7 +4,7 @@ const Model = () => {
   const [selected, setSelected] = useState(0);
   const cars = [
     {
-      Type: 'Audi A4 S-Line',
+      Type: 'Audi A4',
       price: '$55',
       photo: 'https://ik.imagekit.io/joel/audia1.jpg?updatedAt=1697711751386',
       details: [
@@ -29,8 +29,8 @@ const Model = () => {
           car: 'Yes',
         },
         {
-          carmode: 'Transmission',
-          car: 'Automatic',
+          carmode: 'Trans',
+          car: 'Auto',
         },
         {
           carmode: 'Fuel',
@@ -49,7 +49,7 @@ const Model = () => {
         },
         {
           carmode: 'Mark',
-          car: 'Volkswagen',
+          car: 'Volkswag',
         },
         {
           carmode: 'Year',
@@ -64,8 +64,8 @@ const Model = () => {
           car: 'Yes',
         },
         {
-          carmode: 'Transmission',
-          car: 'Manuel',
+          carmode: 'Trans',
+          car: 'Man',
         },
         {
           carmode: 'Fuel',
@@ -74,7 +74,7 @@ const Model = () => {
       ],
     },
     {
-      Type: 'Mercedes-Benz GLE',
+      Type: 'Mercedes-Benz',
       price: '$97',
       photo: 'https://ik.imagekit.io/joel/benz.jpg?updatedAt=1697711751259',
       details: [
@@ -99,8 +99,8 @@ const Model = () => {
           car: 'Yes',
         },
         {
-          carmode: 'Transmission',
-          car: 'Automatic',
+          carmode: 'Trans',
+          car: 'Auto',
         },
         {
           carmode: 'Fuel',
@@ -109,7 +109,7 @@ const Model = () => {
       ],
     },
     {
-      Type: 'BMW 320 ModernLine',
+      Type: 'BMW 320',
       price: '$80',
       photo: 'https://ik.imagekit.io/joel/bmw320.jpg?updatedAt=1697711609015',
       details: [
@@ -134,8 +134,8 @@ const Model = () => {
           car: 'Yes',
         },
         {
-          carmode: 'Transmission',
-          car: 'Manuel',
+          carmode: 'Trans',
+          car: 'Man',
         },
         {
           carmode: 'Fuel',
@@ -169,8 +169,8 @@ const Model = () => {
           car: 'Yes',
         },
         {
-          carmode: 'Transmission',
-          car: 'Automatic',
+          carmode: 'Trans',
+          car: 'Auto',
         },
         {
           carmode: 'Fuel',
@@ -181,7 +181,8 @@ const Model = () => {
     {
       Type: 'VW Passo',
       price: '$30',
-      photo: 'https://ik.imagekit.io/joel/toyotacamry.jpg?updatedAt=1697711886811',
+      photo:
+        'https://ik.imagekit.io/joel/toyotacamry.jpg?updatedAt=1697711886811',
       details: [
         {
           carmode: 'Model',
@@ -204,8 +205,8 @@ const Model = () => {
           car: '??',
         },
         {
-          carmode: 'Transmission',
-          car: 'Automatic',
+          carmode: 'Trans',
+          car: 'Auto',
         },
         {
           carmode: 'Fuel',
@@ -218,16 +219,18 @@ const Model = () => {
   return (
     <>
       <section className='mt-36 lg:mt-0'>
-        <div className='md:min-w-fit min-w-[140%] flex flex-col justify-center items-center gap-y-3 m-9'>
+        <div className='md:min-w-fit min-w-[140%] flex flex-col justify-center items-center gap-y-3 mt-44'>
           <p className='md:text-2xl text-3xl font-bold'>Vehicle Models</p>
-          <p className='md:text-4xl text-5xl font-extrabold'>Our rental fleet</p>
+          <p className='md:text-4xl text-5xl font-extrabold'>
+            Our rental fleet
+          </p>
           <p className='text-black/70 text-center md:text-[16px] text-[22px]'>
             Choose from a variety of our amazing vehicles to rent for your next
             adventure or business trip below
           </p>
         </div>
-        <div className='flex flex-col lg:flex-row lg:justify-center items-center space-y-9 pb-9 m-9'>
-          <div className='w-1/4 flex flex-col'>
+        <div className='flex flex-col lg:flex-row lg:justify-center items-center space-y-9 pb-16 w-9/12 mx-auto'>
+          <div className='w-1/2 flex flex-col'>
             {cars.map((models, key) => {
               return (
                 <button
@@ -235,7 +238,7 @@ const Model = () => {
                   onClick={() => {
                     setSelected(key);
                   }}
-                  className={ `xl:w-64 xl:h-12 md:w-44 w-80 md:h-10 h-16 inline-flex items-center justify-center text-center xl:text-[19px] md:text-[16px] text-[25px] border-b  border-[#b8b8b8] font-bold rounded-md ease-in duration-200 hover:bg-primary hover:text-white mb-2 ${
+                  className={`xl:w-64 xl:h-12 md:w-44 w-80 md:h-10 h-16 inline-flex items-center justify-center text-center xl:text-[19px] md:text-[16px] text-[25px] border-b  border-[#b8b8b8] font-bold rounded-md ease-in duration-200 hover:bg-primary hover:text-white mb-2 ${
                     selected === key
                       ? 'bg-primary text-white'
                       : 'bg-none text-black'
@@ -246,10 +249,10 @@ const Model = () => {
               );
             })}
           </div>
-          <div className='xl:w-1/3 md:w-1/2 w-full md:ml-0 ml-56'>
-            <img src={ cars[selected]?.photo } alt="" className="" />
+          <div className='xl:w-1/2 md:w-1/2 w-full md:ml-0 ml-56 mr-7'>
+            <img src={cars[selected]?.photo} alt='' className='' />
           </div>
-          <div className='w-1/4 lg:ml-12'>
+          <div className='w-1/3 lg:ml-12'>
             <RowOne data={cars[selected]} />
             <div>
               <button className='md:w-60 w-80 h-12 bg-primary text-white hover:bg-primary/80 transform ease-out duration-300 font-bold text-[19px] mt-3'>
@@ -271,18 +274,29 @@ const RowOne = ({ data }: { data: any }) => {
       <thead>
         <tr className='bg-primary text-white'>
           <td className='text-center p-2'>
-            <p className='text-[26px] font-extrabold'>{ data?.price }<span className='md:text-[18px] text-[30px] font-bold'> / price per day</span></p>
+            <p className='text-[26px] font-extrabold'>
+              {data?.price}
+              <span className='md:text-[18px] text-[30px] font-bold'>
+                {' '}
+                / price per day
+              </span>
+            </p>
           </td>
         </tr>
       </thead>
       <tbody>
-        { data.details.map((detail: any, key: number) => (
-          <tr key={ key } className='md:w-60 w-80 h-9 flex justify-between border-b border-r border-l text-center md:text-[16px] text-[20px]'>
+        {data.details.map((detail: any, key: number) => (
+          <tr
+            key={key}
+            className='md:w-60 w-80 h-9 flex justify-between border-b border-r border-l text-center md:text-[16px] text-[20px]'
+          >
             <td className='grid grid-cols-3 w-full py-1'>
-              <p>{ detail?.carmode }</p><p> - </p><p>{ detail?.car }</p>
+              <p>{detail?.carmode}</p>
+              <p> - </p>
+              <p>{detail?.car}</p>
             </td>
           </tr>
-        )) }
+        ))}
       </tbody>
     </table>
   );
