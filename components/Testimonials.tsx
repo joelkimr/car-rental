@@ -78,8 +78,8 @@ const Testimonials = () => {
   return (
     <>
       <section className=''>
-        <div className='w-9/12 mx-auto space-y-28 mb-32'>
-          <div className='w-full flex flex-col justify-center items-center space-y-3 mt-44'>
+        <div className='w-9/12 mx-auto space-y-28 mb-20'>
+          <div className='w-full flex flex-col justify-center items-center space-y-3 mt-32'>
             <p className='md:text-2xl text-3xl font-bold'>Reviewed by People</p>
             <p className='md:text-4xl text-5xl font-extrabold'>
               Client{`'`}s Testimonials
@@ -113,7 +113,7 @@ const Testimonials = () => {
                               {[...Array(rating)].map((_, index) => (
                                 <FilledStarIcon
                                   key={index}
-                                  className='text-[10px] text-yellow-300'
+                                  className='text-yellow-300'
                                 />
                               ))}
                             </div>
@@ -130,8 +130,8 @@ const Testimonials = () => {
                                   src={image_url}
                                   alt={name}
                                   className='rounded-full'
-                                  width={30}
-                                  height={30}
+                                  width={25}
+                                  height={25}
                                 />
                                 <p className='text-[15px] font-bold text-neutral-700'>
                                   {name}
@@ -151,6 +151,7 @@ const Testimonials = () => {
             </div>
           </div>
         </div>
+        <hr />
       </section>
     </>
   );
