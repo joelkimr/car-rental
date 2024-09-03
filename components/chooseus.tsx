@@ -92,6 +92,7 @@ const ChooseUs = () => {
             </div>
           </div>
         </div>
+        <hr className='mt-20' />
       </section>
     </>
   );

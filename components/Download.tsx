@@ -21,15 +21,15 @@ const Download = () => {
             </p>
             <div className='flex flex-row gap-x-9'>
               <div>
-                <Image src={Img2} width={140} height={70} />
+                <Image alt='app' src={Img2} width={140} height={70} />
               </div>
               <div>
-                <Image src={Img1} width={140} height={70} />
+                <Image alt='app' src={Img1} width={140} height={70} />
               </div>
             </div>
           </div>
           <div className='md:block hidden'>
-            <Image src={bg02} />
+            <Image alt='phone' src={bg02} />
           </div>
         </div>
       </section>
