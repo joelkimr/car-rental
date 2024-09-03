@@ -29,7 +29,7 @@ const Download = () => {
             </div>
           </div>
           <div className='md:block hidden'>
-            <Image src={bg02} />
+            <Image alt='phone' src={bg02} />
           </div>
         </div>
       </section>
