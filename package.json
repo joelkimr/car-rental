@@ -14,8 +14,10 @@
     "test-all": "npm run check-format check-lint check-types build"
   },
   "dependencies": {
+    "@radix-ui/react-slot": "^1.1.0",
     "@types/node": "^18.7.6",
     "@types/react": "^18.0.17",
+    "class-variance-authority": "^0.7.0",
     "framer-motion": "^10.16.4",
     "google-fonts": "^1.0.0",
     "next": "13.4.0",
