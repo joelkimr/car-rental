@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import AllCars from './Cars';
 
 const Model = () => {
   const [selected, setSelected] = useState(0);
@@ -261,6 +262,7 @@ const Model = () => {
             </div>
           </div>
         </div>
+        <AllCars />
       </section>
     </>
   );

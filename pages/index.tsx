@@ -12,7 +12,7 @@ import Footer from '../components/Footer';
 
 const Home: NextPage = (): JSX.Element => {
   return (
-    <>
+    <div className='w-full h-auto'>
       <Hero />
       <Booking />
       <Planning />
@@ -22,7 +22,7 @@ const Home: NextPage = (): JSX.Element => {
       <Testimonials />
       <Download />
       <Footer />
-    </>
+    </div>
   );
 };
 
