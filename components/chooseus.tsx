@@ -11,7 +11,7 @@ const ChooseUs = () => {
     <>
       <section>
         <div className='text-center m-9 md:block hidden'>
-          <Image src={Ban} />
+          <Image alt='profile' src={Ban} />
         </div>
         <div className='md:w-9/12 flex lg:flex-row flex-col justify-center items-center space-x-16 md:p-0 mx-auto'>
           <div className='w-full space-y-2'>
@@ -46,7 +46,7 @@ const ChooseUs = () => {
           <div className='w-full space-y-8 lg:mt-0 mt-20'>
             <div className='flex flex-row items-center gap-6'>
               <div>
-                <Image src={Icon1} width={200} height={200} />
+                <Image alt='profile' src={Icon1} width={200} height={200} />
               </div>
               <div>
                 <h4 className='md:text-2xl text-4xl font-extrabold'>
@@ -61,7 +61,7 @@ const ChooseUs = () => {
             <div>
               <div className='flex flex-row items-center gap-6'>
                 <div>
-                  <Image src={Icon2} width={200} height={200} />
+                  <Image alt='profile' src={Icon2} width={200} height={200} />
                 </div>
                 <div>
                   <h4 className='md:text-2xl text-4xl font-extrabold'>
@@ -77,7 +77,7 @@ const ChooseUs = () => {
             <div>
               <div className='flex flex-row items-center gap-6'>
                 <div>
-                  <Image src={Icon3} width={200} height={200} />
+                  <Image alt='profile' src={Icon3} width={200} height={200} />
                 </div>
                 <div>
                   <h4 className='md:text-2xl text-4xl font-extrabold'>
