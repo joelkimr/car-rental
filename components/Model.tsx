@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import AllCars from './Cars';
+import Link from 'next/link';
 
 const Model = () => {
   const [selected, setSelected] = useState(0);
@@ -220,7 +221,7 @@ const Model = () => {
   return (
     <>
       <section className='mt-36 lg:mt-0'>
-        <div className='md:min-w-fit min-w-[140%] flex flex-col justify-center items-center gap-y-3 mt-44'>
+        <div className='md:min-w-fit min-w-[140%] flex flex-col justify-center items-center gap-y-3 mt-28'>
           <p className='md:text-2xl text-3xl font-bold'>Vehicle Models</p>
           <p className='md:text-4xl text-5xl font-extrabold'>
             Our rental fleet
@@ -255,10 +256,8 @@ const Model = () => {
           </div>
           <div className='w-1/3 lg:ml-12'>
             <RowOne data={cars[selected]} />
-            <div>
-              <button className='md:w-60 w-80 h-12 bg-primary text-white hover:bg-primary/80 transform ease-out duration-300 font-bold text-[19px] mt-3'>
-                RESERVE NOW
-              </button>
+            <div className='md:w-60 w-80 h-12 bg-primary flex justify-center items-center text-white hover:bg-primary/80 transform ease-out duration-300 font-bold text-[19px]'>
+              <Link href='/cars'>RESERVE NOW</Link>
             </div>
           </div>
         </div>

@@ -78,10 +78,8 @@ const Footer = () => {
                     key={link}
                     className='text-neutral-600 hover:text-white/90 ease-in-out duration-300'
                   >
-                    <button className='h-auto text-balance rounded-none p-0 text-[13px] font-normal leading-none sm:text-sm'>
-                      <a href='#' target='_blank' rel='noreferrer'>
-                        {link}
-                      </a>
+                    <button className='h-auto text-balance rounded-none p-0 text-[13px] font-normal leading-none sm:text-[13px]'>
+                      <a href='#'>{link}</a>
                     </button>
                   </li>
                 ))}

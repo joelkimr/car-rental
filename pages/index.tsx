@@ -1,7 +1,7 @@
 import React from 'react';
 import { NextPage } from 'next';
 import Hero from '../components/HeroSection/Hero';
-import Booking from '../components/Booking';
+import Booking from '../components/Booking/Booking';
 import Planning from '../components/Planning';
 import Model from '../components/Model';
 import Banner from '../components/Banner';
@@ -12,7 +12,7 @@ import Footer from '../components/Footer';
 
 const Home: NextPage = (): JSX.Element => {
   return (
-    <div className='w-full h-auto'>
+    <div>
       <Hero />
       <Booking />
       <Planning />

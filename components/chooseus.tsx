@@ -10,8 +10,8 @@ const ChooseUs = () => {
   return (
     <>
       <section>
-        <div className='text-center m-9 md:block hidden'>
-          <Image alt='profile' src={Ban} />
+        <div className='w-full md:block hidden m-9'>
+          <Image alt='profile' src={Ban} className='mx-auto' />
         </div>
         <div className='md:w-9/12 flex lg:flex-row flex-col justify-center items-center space-x-16 md:p-0 mx-auto'>
           <div className='w-full space-y-2'>
@@ -31,9 +31,9 @@ const ChooseUs = () => {
             </p>
             <div className='banner-btn'>
               <a href='#'>
-                <div className='flex flex-row'>
+                <div className='flex flex-row items-center'>
                   <span></span>
-                  <p>
+                  <p className='text-sm'>
                     <b> Find Details</b>
                   </p>
                   <p className='mt-1 ml-2 text-xl'>
