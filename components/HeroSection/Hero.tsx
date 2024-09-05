@@ -1,7 +1,5 @@
 import React from 'react';
-import NavBar from './navBar';
 import Image from 'next/image';
-import Background from '../../images/hero/hero-bg.png';
 import MainCar from '../../images/hero/main-car.png';
 import { RiArrowRightSLine } from 'react-icons/ri';
 import { MdVerified } from 'react-icons/md';
@@ -9,38 +7,28 @@ import { MdVerified } from 'react-icons/md';
 const Hero = () => {
   return (
     <>
-      <section className='w-full h-auto'>
-        <NavBar />
-
+      <section className='w-9/12 h-auto mx-auto'>
         <div className='relative'>
-          <div className='w-full text-end absolute lg:block hidden 2xl:hidden'>
-            <Image
-              alt='background_picture'
-              src={Background}
-              width={600}
-              height={550}
-            />
-          </div>
-          <div className='md:min-w-full min-w-[140%] h-screen flex justify-center items-center mt-24 md:mt-0 mb-20 md:mb-0 ml-6 md:ml-0'>
+          <div className='h-screen flex justify-center items-center mt-24 md:mt-0 mb-20 md:mb-0 ml-6 md:ml-0'>
             <div className='space-y-9'>
               <div className='space-y-4'>
                 <p className='md:text-2xl text-4xl font-extrabold'>
                   Plan your trip now
                 </p>
-                <p className='md:text-5xl text-6xl font-extrabold'>
+                <p className='md:text-[45px] text-6xl font-extrabold'>
                   Save <span className='text-orange-600'>big </span>with our
                   <br /> car rental
                 </p>
-                <p className='md:text-sm text-lg text-black/50 font-semibold'>
+                <p className='md:text-sm text-lg text-black/50'>
                   Rent the car of your dreams. Unbeatable prices. Unlimited
                   miles. <br /> Flexible pick-up options and much more
                 </p>
               </div>
               <div className='banner-btn'>
                 <a href='#'>
-                  <div className='flex flex-row'>
+                  <div className='flex flex-row items-center'>
                     <span></span>
-                    <p>
+                    <p className='text-sm'>
                       {' '}
                       <b> Book Ride</b>
                     </p>
@@ -50,9 +38,9 @@ const Hero = () => {
                   </div>
                 </a>
                 <a href='#'>
-                  <div className='flex flex-row'>
+                  <div className='flex flex-row items-center'>
                     <span></span>
-                    <p>
+                    <p className='text-sm'>
                       {' '}
                       <b> Learn More</b>
                     </p>
@@ -63,7 +51,7 @@ const Hero = () => {
                 </a>
               </div>
             </div>
-            <div className='xl:w-[39rem] xl:h-[33rem] w-[31rem] h-[25rem] lg:block hidden'>
+            <div className='xl:w-[39rem] xl:h-[33rem] w-[31rem] h-[25rem] lg:block hidden mt-24'>
               <Image alt='maincar_image' src={MainCar} />
             </div>
           </div>

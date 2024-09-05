@@ -3,7 +3,7 @@ import React from 'react';
 
 const Cars = () => {
   return (
-    <div className='w-9/12 mx-auto flex flex-row justify-between items-center p-8 mt-14 mb-32'>
+    <div className='w-9/12 mx-auto flex flex-row justify-between items-center pr-8 mt-14 mb-32'>
       <div className='text-3xl font-extrabold'>
         <p>Ready to Hit the Road?</p>
         <p> Start Your Adventure Today!</p>
