@@ -14,14 +14,12 @@ const ChooseUs = () => {
           <Image alt='profile' src={Ban} className='mx-auto' />
         </div>
         <div className='md:w-9/12 flex lg:flex-row flex-col justify-center items-center space-x-16 md:p-0 mx-auto'>
-          <div className='w-full space-y-2'>
-            <h4 className='md:text-xl text-3xl font-extrabold'>
-              Why Choose Us
-            </h4>
+          <div className='w-full space-y-6'>
+            <h4 className='md:text-xl text-3xl font-semibold'>Why Choose Us</h4>
             <h2 className='md:text-4xl text-5xl font-extrabold'>
               Best valued deals you will ever find
             </h2>
-            <p className='text-black/60 md:text-base text-[23px]'>
+            <p className='text-black/60 md:text-[15px] text-[23px]'>
               Discover the best deals you{`'`}ll ever find with our unbeatable
               offers. We{`'`}re dedicated to providing you with the best value
               for your money, so you can enjoy top-quality services and products
@@ -49,10 +47,10 @@ const ChooseUs = () => {
                 <Image alt='profile' src={Icon1} width={200} height={200} />
               </div>
               <div>
-                <h4 className='md:text-2xl text-4xl font-extrabold'>
+                <h4 className='md:text-xl text-4xl font-semibold'>
                   Cross Country Drive
                 </h4>
-                <p className='text-black/60 md:text-base text-[22px]'>
+                <p className='text-black/60 md:text-[15px] text-[22px]'>
                   Take your driving experience to the next level with our
                   top-notch vehicles for your cross-country adventures.
                 </p>
@@ -64,10 +62,10 @@ const ChooseUs = () => {
                   <Image alt='profile' src={Icon2} width={200} height={200} />
                 </div>
                 <div>
-                  <h4 className='md:text-2xl text-4xl font-extrabold'>
+                  <h4 className='md:text-xl text-4xl font-semibold'>
                     All Inclusive Pricing
                   </h4>
-                  <p className='text-black/60 md:text-base text-[22px]'>
+                  <p className='text-black/60 md:text-[15px] text-[22px]'>
                     Get everything you need in one convenient, transparent price
                     with our all-inclusive pricing policy.
                   </p>
@@ -80,10 +78,10 @@ const ChooseUs = () => {
                   <Image alt='profile' src={Icon3} width={200} height={200} />
                 </div>
                 <div>
-                  <h4 className='md:text-2xl text-4xl font-extrabold'>
+                  <h4 className='md:text-xl text-4xl font-semibold'>
                     No Hidden Charges
                   </h4>
-                  <p className='text-black/60 md:text-base text-[22px]'>
+                  <p className='text-black/60 md:text-[15px] text-[22px]'>
                     Enjoy peace of mind with our no hidden charges policy. We
                     believe in transparent and honest pricing.
                   </p>

@@ -222,11 +222,11 @@ const Model = () => {
     <>
       <section className='mt-36 lg:mt-0'>
         <div className='md:min-w-fit min-w-[140%] flex flex-col justify-center items-center gap-y-3 mt-28'>
-          <p className='md:text-2xl text-3xl font-bold'>Vehicle Models</p>
+          <p className='md:text-2xl text-3xl font-semibold'>Vehicle Models</p>
           <p className='md:text-4xl text-5xl font-extrabold'>
             Our rental fleet
           </p>
-          <p className='text-black/70 text-center md:text-[16px] text-[22px]'>
+          <p className='text-black/70 text-center md:text-[15px] text-[22px]'>
             Choose from a variety of our amazing vehicles to rent for your next
             adventure or business trip below
           </p>
@@ -240,7 +240,7 @@ const Model = () => {
                   onClick={() => {
                     setSelected(key);
                   }}
-                  className={`xl:w-64 xl:h-12 md:w-44 w-80 md:h-10 h-16 inline-flex items-center justify-center text-center xl:text-[19px] md:text-[16px] text-[25px] border-b  border-[#b8b8b8] font-bold rounded-md ease-in duration-200 hover:bg-primary hover:text-white mb-2 ${
+                  className={`xl:w-64 xl:h-12 md:w-44 w-80 md:h-10 h-16 inline-flex items-center justify-center text-center xl:text-[16px] md:text-[16px] text-[25px] border-b  border-[#b8b8b8] font-semibold rounded-md ease-in duration-200 hover:bg-primary hover:text-white mb-2 ${
                     selected === key
                       ? 'bg-primary text-white'
                       : 'bg-none text-black'
@@ -256,7 +256,7 @@ const Model = () => {
           </div>
           <div className='w-1/3 lg:ml-12'>
             <RowOne data={cars[selected]} />
-            <div className='md:w-60 w-80 h-12 bg-primary flex justify-center items-center text-white hover:bg-primary/80 transform ease-out duration-300 font-bold text-[19px]'>
+            <div className='md:w-60 w-80 h-12 bg-primary flex justify-center items-center text-white hover:bg-primary/80 transform ease-out duration-300 font-bold text-[16px]'>
               <Link href='/cars'>RESERVE NOW</Link>
             </div>
           </div>
@@ -277,7 +277,7 @@ const RowOne = ({ data }: { data: any }) => {
           <td className='text-center p-2'>
             <p className='text-[26px] font-extrabold'>
               {data?.price}
-              <span className='md:text-[18px] text-[30px] font-bold'>
+              <span className='md:text-[15px] text-[30px] font-bold'>
                 {' '}
                 / price per day
               </span>
@@ -289,7 +289,7 @@ const RowOne = ({ data }: { data: any }) => {
         {data.details.map((detail: any, key: number) => (
           <tr
             key={key}
-            className='md:w-60 w-80 h-9 flex justify-between border-b border-r border-l text-center md:text-[16px] text-[20px]'
+            className='md:w-60 w-80 h-9 flex justify-between border-b border-r border-l text-center md:text-[13px] text-[20px]'
           >
             <td className='grid grid-cols-3 w-full py-1'>
               <p>{detail?.carmode}</p>

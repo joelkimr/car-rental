@@ -80,11 +80,13 @@ const Testimonials = () => {
       <section className=''>
         <div className='w-9/12 mx-auto space-y-28 mb-20'>
           <div className='w-full flex flex-col justify-center items-center space-y-3 mt-32'>
-            <p className='md:text-2xl text-3xl font-bold'>Reviewed by People</p>
+            <p className='md:text-2xl text-3xl font-semibold'>
+              Reviewed by People
+            </p>
             <p className='md:text-4xl text-5xl font-extrabold'>
               Client{`'`}s Testimonials
             </p>
-            <p className='w-9/12 text-black/70 text-center md:text-[16px] text-[22px]'>
+            <p className='w-9/12 text-black/70 text-center md:text-[15px] text-[22px]'>
               {' '}
               Discover the positive impact we{`'`}ve made on the our clients by
               reading through their testimonials. Our clients have experienced
@@ -119,7 +121,7 @@ const Testimonials = () => {
                             </div>
                             <div className='pt-4'>
                               {/* Comment Section */}
-                              <blockquote className='text-balance text-[14px] leading-[23px] text-neutral-500 sm:text-[15px] sm:leading-normal md:leading-[26px] lg:text-[16px]'>
+                              <blockquote className='text-balance text-[14px] leading-[23px] text-neutral-500 sm:text-[15px] sm:leading-normal md:leading-[26px] lg:text-[15px]'>
                                 “{comment}”
                               </blockquote>
                             </div>
