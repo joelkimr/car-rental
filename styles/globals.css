@@ -35,11 +35,16 @@
 .banner-btn a:hover span {
   width: 100%;
   border-radius: 7px;
-  border: 1px solid black;
+  border: 1px solid #f8462e;
+  background-color: #fedbb2;
 }
 
 .banner-btn a:hover {
   color: #000;
+}
+
+.banner-btn h1:hover {
+  color: #3d82b9;
 }
 
 /* Chrome, Edge and Safari */

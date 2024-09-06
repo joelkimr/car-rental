@@ -13,7 +13,7 @@ const Download = () => {
             <p className='md:text-4xl text-5xl font-extrabold'>
               We are still working on our app to get most out of it
             </p>
-            <p className='text-black/70 lg:block hidden'>
+            <p className='text-black/70 lg:block hidden md:text-[15px]'>
               {' '}
               Thrown shy denote ten ladies though ask saw. Or by to he going
               think order event music. Incommode so intention defective at

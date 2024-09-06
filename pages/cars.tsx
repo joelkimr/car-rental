@@ -1,7 +1,11 @@
 import React from 'react';
 
 const cars = () => {
-  return <div>cars</div>;
+  return (
+    <div>
+      <p>cars</p>
+    </div>
+  );
 };
 
 export default cars;

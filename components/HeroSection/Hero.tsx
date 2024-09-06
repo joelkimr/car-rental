@@ -9,7 +9,7 @@ const Hero = () => {
     <>
       <section className='w-9/12 h-auto mx-auto'>
         <div className='relative'>
-          <div className='h-screen flex justify-center items-center mt-24 md:mt-0 mb-20 md:mb-0 ml-6 md:ml-0'>
+          <div className='h-screen flex justify-center items-center mt-24 md:mt-0 mb-20 md:mb-9 ml-6 md:ml-0'>
             <div className='space-y-9'>
               <div className='space-y-4'>
                 <p className='md:text-2xl text-4xl font-extrabold'>
@@ -20,8 +20,9 @@ const Hero = () => {
                   <br /> car rental
                 </p>
                 <p className='md:text-sm text-lg text-black/50'>
-                  Rent the car of your dreams. Unbeatable prices. Unlimited
-                  miles. <br /> Flexible pick-up options and much more
+                  Rent the car of your dream. Unbeatable prices.
+                  <br /> Unlimited miles. <br /> Flexible pick-up options and
+                  much more
                 </p>
               </div>
               <div className='banner-btn'>
@@ -32,9 +33,9 @@ const Hero = () => {
                       {' '}
                       <b> Book Ride</b>
                     </p>
-                    <p className='mt-1 ml-4 text-xl'>
+                    <h1 className='mt-1 ml-4 text-xl'>
                       <MdVerified />
-                    </p>
+                    </h1>
                   </div>
                 </a>
                 <a href='#'>
