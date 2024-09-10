@@ -5,6 +5,10 @@
   margin: auto -10px;
 }
 
+.header {
+  backdrop-filter: blur(10px);
+}
+
 .banner-btn a {
   width: 150px;
   height: 50px;
