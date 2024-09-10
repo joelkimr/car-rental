@@ -4,9 +4,11 @@ import Logo from '../../images/logo/logo.png';
 import { MdPersonPin } from 'react-icons/md';
 import { HiMenuAlt4 } from 'react-icons/hi';
 import Link from 'next/link';
+import DropDownProfile from './dropDownProfile';
 
 const NavBar = () => {
   const [sticky, setSticky] = useState(false);
+  const [openProfile, setOpenProfile] = useState(false);
 
   const handleScroll = () => {
     if (window.scrollY > 10) {
@@ -21,7 +23,7 @@ const NavBar = () => {
 
   return (
     <div
-      className={`w-full flex mx-auto justify-around p-3 space-x-[33rem] border-[1px] border-b-black/10 header bg-white/60 fixed z-50 ${
+      className={`w-full flex mx-auto justify-around p-3 space-x-[33rem] border-[1px] border-b-black/10 header bg-white/70 fixed z-50 ${
         sticky ? 'border-[1px] border-b-black/10 shadow-sm' : ''
       }`}
     >
@@ -36,13 +38,17 @@ const NavBar = () => {
           />
         </Link>
       </div>
-      <div className='flex items-center justify-center space-x-1'>
+      <div
+        className='flex items-center justify-center relative'
+        onClick={() => setOpenProfile((prev) => !prev)}
+      >
         <div>
-          <HiMenuAlt4 className='text-xl' />
+          <HiMenuAlt4 className='text-xl  cursor-pointer' />
         </div>
         <div>
-          <MdPersonPin className=' text-3xl' />
+          <MdPersonPin className=' text-3xl cursor-pointer' />
         </div>
+        {openProfile && <DropDownProfile />}
       </div>
     </div>
   );

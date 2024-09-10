@@ -9,6 +9,18 @@
   backdrop-filter: blur(10px);
 }
 
+.dropdownprofile {
+  width: 140px;
+  position: absolute;
+  top: 3rem;
+  left: -3rem;
+  border: 1px solid rgb(209, 209, 209);
+  background-color: #fff;
+  border-radius: 10px;
+  font-size: small;
+  font-weight: 400;
+}
+
 .banner-btn a {
   width: 150px;
   height: 50px;

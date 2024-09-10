@@ -4,7 +4,7 @@ import { LogoSlider } from './Logos';
 const Booking = () => {
   return (
     <>
-      <section>
+      <section className='mt-9'>
         <div className='w-9/12 mx-auto'>
           <div className=''>
             <p className='font-extrabold md:text-2xl text-4xl mb-6'>
