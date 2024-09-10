@@ -1,13 +1,30 @@
 import Image from 'next/image';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Logo from '../../images/logo/logo.png';
 import { MdPersonPin } from 'react-icons/md';
 import { HiMenuAlt4 } from 'react-icons/hi';
 import Link from 'next/link';
 
 const NavBar = () => {
+  const [sticky, setSticky] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 10) {
+      setSticky(true);
+    } else {
+      setSticky(false);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <div className='w-9/12 flex lg:justify-between lg:items-center lg:space-x-6 xl:space-x-24 mx-auto pt-6'>
+    <div
+      className={`w-full flex mx-auto justify-around p-3 space-x-[33rem] border-[1px] border-b-black/10 header bg-white/60 fixed z-50 ${
+        sticky ? 'border-[1px] border-b-black/10 shadow-sm' : ''
+      }`}
+    >
       <div>
         <Link href='/'>
           <Image

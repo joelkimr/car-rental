@@ -52,7 +52,7 @@ const Hero = () => {
                 </a>
               </div>
             </div>
-            <div className='xl:w-[39rem] xl:h-[33rem] w-[31rem] h-[25rem] lg:block hidden mt-24'>
+            <div className='xl:w-[39rem] xl:h-[33rem] w-[31rem] h-[25rem] lg:block hidden mt-52'>
               <Image alt='maincar_image' src={MainCar} />
             </div>
           </div>
