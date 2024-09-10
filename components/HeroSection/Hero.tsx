@@ -8,8 +8,8 @@ const Hero = () => {
   return (
     <>
       <section className='w-9/12 h-auto mx-auto'>
-        <div className='relative'>
-          <div className='h-screen flex justify-center items-center mt-24 md:mt-0 mb-20 md:mb-9 ml-6 md:ml-0'>
+        <div className=''>
+          <div className='w-full flex justify-center items-center mt-40 md:mb-32 ml-6 md:ml-0'>
             <div className='space-y-9'>
               <div className='space-y-4'>
                 <p className='md:text-2xl text-4xl font-extrabold'>
@@ -52,7 +52,7 @@ const Hero = () => {
                 </a>
               </div>
             </div>
-            <div className='xl:w-[39rem] xl:h-[33rem] w-[31rem] h-[25rem] lg:block hidden mt-52'>
+            <div className='xl:w-2/3 w-[31rem] lg:block hidden'>
               <Image alt='maincar_image' src={MainCar} />
             </div>
           </div>
