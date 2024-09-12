@@ -1,15 +1,12 @@
 import React from 'react';
 
+import { UserMenuButton } from './user-menu-button';
+
 const DropDownProfile = () => {
   return (
     <div>
-      <div>
-        <ul className='flex flex-col p-3 space-y-1 dropdownprofile '>
-          <li>Sign In</li>
-          <li>Sign Up</li>
-          <hr />
-          <li>Help Center</li>
-        </ul>
+      <div className='inline-flex'>
+        <UserMenuButton />
       </div>
     </div>
   );

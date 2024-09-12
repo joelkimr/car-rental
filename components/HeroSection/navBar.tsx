@@ -5,6 +5,7 @@ import { MdPersonPin } from 'react-icons/md';
 import { HiMenuAlt4 } from 'react-icons/hi';
 import Link from 'next/link';
 import DropDownProfile from './dropDownProfile';
+import { UserMenuButton } from './user-menu-button';
 
 const NavBar = () => {
   const [sticky, setSticky] = useState(false);
@@ -38,7 +39,10 @@ const NavBar = () => {
           />
         </Link>
       </div>
-      <div
+      <div className='inline-flex z-50'>
+        <UserMenuButton />
+      </div>
+      {/* <div
         className='flex items-center justify-center relative'
         onClick={() => setOpenProfile((prev) => !prev)}
       >
@@ -49,7 +53,7 @@ const NavBar = () => {
           <MdPersonPin className=' text-3xl cursor-pointer' />
         </div>
         {openProfile && <DropDownProfile />}
-      </div>
+      </div> */}
     </div>
   );
 };
