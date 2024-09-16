@@ -224,7 +224,7 @@ const Model = () => {
         <div className='md:min-w-fit min-w-[140%] flex flex-col justify-center items-center gap-y-3 mt-28'>
           <p className='md:text-2xl text-3xl font-semibold'>Vehicle Models</p>
           <p className='md:text-4xl text-5xl font-extrabold'>
-            Our rental fleet
+            Our Top rental Fleet
           </p>
           <p className='text-black/70 text-center md:text-[15px] text-[22px]'>
             Choose from a variety of our amazing vehicles to rent for your next

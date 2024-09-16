@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { LogoSlider } from './Logos';
+import { DatePicker } from 'antd';
+
+const { RangePicker } = DatePicker;
 
 const Booking = () => {
+  const [dates, setDates] = useState([]);
   return (
     <>
       <section className='mt-9'>
@@ -11,7 +15,14 @@ const Booking = () => {
               Book a Car
             </p>
           </div>
-          <div></div>
+          <div>
+            <RangePicker
+              className='w-96'
+              onChange={(values) => {
+                setDates(values);
+              }}
+            />
+          </div>
         </div>
         <div className='py-36 w-9/12 mx-auto'>
           <div className='relative h-12 min-h-12 overflow-x-hidden'>

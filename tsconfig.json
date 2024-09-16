@@ -22,6 +22,6 @@
     "target": "ES2018",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/Booking/Booking.tsx"],
   "exclude": ["node_modules"]
 }
