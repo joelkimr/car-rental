@@ -1,8 +1,10 @@
 // import { URLSearchParams } from 'next/navigation';
+
 import { clsx, type ClassValue } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 
 import { siteConfig } from './site';
+import { ReadonlyURLSearchParams } from 'next/navigation';
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -34,6 +36,14 @@ export function slugify(str: string) {
     .replace(/-+/g, '-'); // remove consecutive hyphens
   return str;
 }
+
+export const constructUrlWithParams = (
+  pathname: string,
+  params: URLSearchParams | ReadonlyURLSearchParams
+): string => {
+  const queryString = params.toString();
+  return queryString ? `${pathname}?${queryString}` : pathname;
+};
 
 export function absoluteUrl(path: string) {
   switch (process.env.NEXT_PUBLIC_VERCEL_ENV) {
