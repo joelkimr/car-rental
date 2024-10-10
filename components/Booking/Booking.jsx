@@ -1,7 +1,6 @@
 import React from 'react';
 import { LogoSlider } from './Logos';
-import { SearchPanel } from './search-panel';
-
+import { SearchPanelWrapper } from './search-panel-wrapper';
 const Booking = () => {
   return (
     <>
@@ -13,7 +12,7 @@ const Booking = () => {
             </p>
           </div>
           <div>
-            <SearchPanel />
+            <SearchPanelWrapper />
           </div>
         </div>
         <div className='py-48 w-9/12 mx-auto'>
