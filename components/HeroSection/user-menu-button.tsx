@@ -8,7 +8,6 @@ import {
   UserButton,
 } from '@clerk/nextjs';
 
-// import { siteConfig } from "@/config/site"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -23,10 +22,8 @@ import { UserCircleIcon } from '../ui/user-circle';
 import { Button } from '../ui/button';
 
 export function UserMenuButton() {
-  // const githubUrl = siteConfig.links.github
-
   return (
-    <>
+    <div className='-m-3'>
       <ClerkProvider>
         <SignedIn>
           <UserButton />
@@ -69,6 +66,6 @@ export function UserMenuButton() {
           </DropdownMenu>
         </SignedOut>
       </ClerkProvider>
-    </>
+    </div>
   );
 }

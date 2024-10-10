@@ -11,7 +11,11 @@
     "check-format": "prettier --check .",
     "check-lint": "eslint . --ext ts --ext tsx --ext js",
     "format": "prettier --write .",
-    "test-all": "npm run check-format check-lint check-types build"
+    "test-all": "npm run check-format check-lint check-types build",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "tsx --tsconfig ./tsconfig.scripts.json ../components/db/migrate.ts",
+    "db:push": "drizzle-kit push",
+    "db:seed": "tsx --tsconfig ./tsconfig.scripts.json ./db/seed.ts"
   },
   "dependencies": {
     "@clerk/nextjs": "^5.5.2",
@@ -21,10 +25,13 @@
     "@radix-ui/react-slot": "^1.1.0",
     "@types/node": "^18.7.6",
     "@types/react": "^18.0.17",
+    "@vercel/postgres": "^0.10.0",
     "antd": "^5.20.6",
     "class-variance-authority": "^0.7.0",
     "cmdk": "^1.0.0",
     "date-fns": "^4.1.0",
+    "dotenv": "^16.4.5",
+    "drizzle-kit": "^0.25.0",
     "drizzle-orm": "^0.33.0",
     "embla-carousel-react": "^8.2.1",
     "framer-motion": "^10.16.4",
@@ -37,6 +44,7 @@
     "react-dom": "18.2.0",
     "react-icons": "^4.4.0",
     "react-scroll": "^1.9.0",
+    "table": "^6.8.2",
     "tailwind-merge": "^2.5.2"
   },
   "devDependencies": {
