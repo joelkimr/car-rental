@@ -7,7 +7,10 @@ const cars = () => {
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque
         modi deserunt doloribus dolorem ea ad quos accusantium exercitationem
         eaque, maiores dolore ratione, perspiciatis sit? Cum deleniti soluta
-        repudiandae praesentium omnis.s
+        repudiandae praesentium omnis.s Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Neque, soluta? Laboriosam asperiores aperiam harum
+        quos ullam repellat labore iste rerum autem aliquam rem dignissimos
+        aspernatur nobis unde, magni doloremque aliquid?
       </p>
     </div>
   );
