@@ -10,7 +10,11 @@ const cars = () => {
         repudiandae praesentium omnis.s Lorem ipsum dolor sit amet consectetur
         adipisicing elit. Neque, soluta? Laboriosam asperiores aperiam harum
         quos ullam repellat labore iste rerum autem aliquam rem dignissimos
-        aspernatur nobis unde, magni doloremque aliquid?
+        aspernatur nobis unde, magni doloremque aliquid?Lorem ipsum dolor sit
+        amet consectetur adipisicing elit. Ut porro, in officiis suscipit
+        reiciendis repellendus odit nobis consequatur. Blanditiis officia nisi
+        cumque quisquam aperiam reprehenderit, recusandae odio voluptas sequi
+        culpa.
       </p>
     </div>
   );
